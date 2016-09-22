@@ -1,0 +1,116 @@
+<div class="container">
+        <div id="signupbox" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+                        </div>
+                        <div class="panel-body" >
+                        <%= form_for(resource, as: resource_name, url: registration_path(resource_name) , :html => {:class => "form-horizontal center"}) do |f| %>
+
+                                <%= devise_error_messages! %>
+
+
+                                <div class="form-group">
+                                    <label for="email" class="col-md-3 control-label">Email</label>
+                                    <div class="col-md-9">
+                                        <%= f.text_field :email, class: "form-control" , autofocus: true, placeholder: "Email Address" , autofocus: true%>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Password
+                                        <% if @minimum_password_length %>
+                                        <em>(<%= @minimum_password_length %> characters minimum)</em>
+                                        <% end %>
+                                        </label>
+                                    <div class="col-md-9">
+                                        <%= f.password_field :password, class: "form-control" ,  placeholder: "Password" , autocomplete: "off" %>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Password Confirmation</label>
+                                    <div class="col-md-9">
+                                        <%= f.password_field :password_confirmation, class: "form-control" ,  placeholder: "Password" , autocomplete: "off" %>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <!-- Button -->
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <%= f.submit "Sign Up" , :class => 'btn btn-info' %><i class="icon-hand-right"></i>
+                                        <span style="margin-left:8px;">or</span>
+                                    </div>
+                                </div>
+
+                                <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+
+                                    <div class="col-md-offset-3 col-md-9">
+                                                                              <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, :class =>"btn btn-primary" %>
+                                    </div>
+                                </div>
+
+                            <% end %>
+                         </div>
+                    </div>
+         </div>
+
+                 <div id="loginbox" style="display:none; margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Log in</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><%= link_to "Forgot password?", new_password_path(resource_name) %></div>
+                    </div>
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+                        <%= form_for(resource, as: resource_name, url: session_path(resource_name) , :html => {:class => "form-horizontal center"}) do |f| %>
+
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                        <%= f.text_field :email, class: "form-control" , autofocus: true, placeholder: "user email" %>
+                                    </div>
+
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                        <%= f.password_field :password, class: "form-control" , autocomplete: "off", placeholder: "password" %>
+                                    </div>
+
+                                    <% if devise_mapping.rememberable? -%>
+                                        <div class="field">
+                                          <%= f.check_box :remember_me %>
+                                          <%= f.label :remember_me %>
+                                        </div>
+                                    <% end -%>
+
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <!-- Button -->
+
+                                    <div class="col-sm-12 controls">
+
+                                      <%= f.submit "Log in" , :class => 'btn btn-success' %>
+                                                                              <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, :class =>"btn btn-primary" %>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                            Don't have an account!
+                                        <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                            Sign Up Here
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        <% end %>
+
+                        </div>
+                    </div>
+        </div>
+    </div>
+

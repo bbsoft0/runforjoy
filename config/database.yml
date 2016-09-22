@@ -1,0 +1,10 @@
+
+  development: &development
+    adapter: postgresql
+    database: runforjoy
+
+  test: &test
+    adapter: postgresql
+    database: runforjoy-test
+
+  production: *development

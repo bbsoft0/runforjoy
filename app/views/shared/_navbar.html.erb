@@ -1,0 +1,23 @@
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <li><%= link_to "Run For Joy", segments_path  %></li>
+            <li><%= link_to "Explore", segments_path  %></li>
+            <li><%= link_to "About", "/path2"  %></li>
+          </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <% if user_signed_in? %>
+              <li><%= link_to current_user.email , '', :class => 'navbar-link' %> </li>
+                <li><%= link_to ' Edit Profile', edit_user_registration_path, :class => 'navbar-link' %> </li>
+                <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+              <% else %>
+              <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
+              <li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></li>
+              <% end %>
+            </ul>
+        </div>
+      </div>
+    </div>
