@@ -22,13 +22,16 @@
         <td><%= segment.pr %></td>
         <td><%= segment.goal %></td>
         <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_segment_path(segment), :class => 'btn btn-default btn-xs' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      segment_path(segment),
-                      :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                      :class => 'btn btn-xs btn-danger' %>
+          <% if user_signed_in? %>
+                <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                            edit_segment_path(segment), :class => 'btn btn-default btn-xs' %>
+                <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                            segment_path(segment),
+                            :method => :delete,
+                            :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                            :class => 'btn btn-xs btn-danger' %>
+                <%= link_to "show", stat_path(segment), class: 'btn btn-xs btn-success' %>
+          <% end %>
         </td>
       </tr>
     <% end %>

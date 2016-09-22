@@ -1,33 +1,49 @@
 <%- model_class = Stat -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+  <h1><%=@segment.name %></h1>
 </div>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:segment_id) %>:</strong></dt>
-  <dd><%= @stat.segment_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:place) %>:</strong></dt>
-  <dd><%= @stat.place %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
-  <dd><%= @stat.name %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:company) %>:</strong></dt>
-  <dd><%= @stat.company %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:time) %>:</strong></dt>
-  <dd><%= @stat.time %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:minkm) %>:</strong></dt>
-  <dd><%= @stat.minkm %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:kmh) %>:</strong></dt>
-  <dd><%= @stat.kmh %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:stars) %>:</strong></dt>
-  <dd><%= @stat.stars %></dd>
-</dl>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:segment_id) %></th>
+      <th><%= model_class.human_attribute_name(:place) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:company) %></th>
+      <th><%= model_class.human_attribute_name(:time) %></th>
+      <th><%= model_class.human_attribute_name(:minkm) %></th>
+      <th><%= model_class.human_attribute_name(:kmh) %></th>
+      <th><%= model_class.human_attribute_name(:stars) %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @stats.each do |stat| %>
+      <tr>
+        <td><%= link_to stat.id, stat_path(stat) %></td>
+        <td><%= stat.segment_id %></td>
+        <td><%= stat.place %></td>
+        <td><%= stat.name %></td>
+        <td><%= stat.company %></td>
+        <td><%= stat.time %></td>
+        <td><%= stat.minkm %></td>
+        <td><%= stat.kmh %></td>
+        <td><%= stat.stars %></td>
 
-<%= link_to t('.back', :default => t("helpers.links.back")),
-              stats_path, :class => 'btn btn-default'  %>
-<%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_stat_path(@stat), :class => 'btn btn-default' %>
-<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-              stat_path(@stat),
-              :method => 'delete',
-              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-              :class => 'btn btn-danger' %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+ <% if user_signed_in? %>
+
+<%= form_for @stat do |f| %>
+  <%= f.file_field :filename %>
+<% end %>
+ <%= link_to "Import Results",
+            import_path,
+            :class => 'btn btn-primary' %>
+<% else %>
+<p> Login or SIgn Up to import new data </p>
+<%end%>

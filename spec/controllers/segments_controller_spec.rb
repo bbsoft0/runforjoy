@@ -4,8 +4,6 @@ require 'database_cleaner'
 DatabaseCleaner.strategy = :truncation
 DatabaseCleaner.clean
 
-
-
 RSpec.describe SegmentsController, type: :controller do
   include Devise::Test::ControllerHelpers
   context "when a user" do
