@@ -3,7 +3,7 @@ class CreateSegments < ActiveRecord::Migration[5.0]
     create_table :segments do |t|
       t.string :name
       t.decimal :dist
-      t.decimal :pr
+      t.string :pr
       t.string :goal
 
       t.timestamps

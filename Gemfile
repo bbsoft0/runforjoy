@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'meta_request'
 end
 
 group :development do
@@ -55,7 +56,7 @@ gem 'will_paginate-bootstrap'
 gem 'will_paginate'
 gem 'omniauth-facebook'
 gem 'simplecov'
-
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 group :production do
   gem 'rails_12factor'

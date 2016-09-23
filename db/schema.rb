@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20160920214301) do
   create_table "segments", force: :cascade do |t|
     t.string   "name"
     t.decimal  "dist"
-    t.decimal  "pr"
+    t.string   "pr"
     t.string   "goal"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -29,9 +29,9 @@ ActiveRecord::Schema.define(version: 20160920214301) do
     t.integer  "place"
     t.string   "name"
     t.string   "company"
-    t.decimal  "time"
-    t.decimal  "minkm"
-    t.decimal  "kmh"
+    t.string   "time"
+    t.string   "minkm"
+    t.string   "kmh"
     t.integer  "stars"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

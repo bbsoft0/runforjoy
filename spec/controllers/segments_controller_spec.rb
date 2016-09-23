@@ -27,13 +27,13 @@ RSpec.describe SegmentsController, type: :controller do
     end
     it "updates a segment" do
       segment = FactoryGirl.create(:segment)
-      patch :update, params: { id: segment.id }
+      process :update, method: :post, params: {id: segment.id, segment: {id: segment.id, name: 'MySegment'}}
       expect(response).to redirect_to(segment_path)
     end
 
     it "doesn't update a segment when the name is empty" do
       segment = FactoryGirl.create(:segment)
-      patch :update, params: { id: segment.id }
+      process :update, method: :post, params: {id: segment.id, segment: {id: segment.id, name: 'MySegment'}}
       expect(response).to redirect_to(segment_path)
     end
     it "can delete a segment" do

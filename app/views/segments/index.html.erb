@@ -30,7 +30,7 @@
                             :method => :delete,
                             :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                             :class => 'btn btn-xs btn-danger' %>
-                <%= link_to "show", stat_path(segment), class: 'btn btn-xs btn-success' %>
+                <%= link_to "show", segment_stats_path(segment), class: 'btn btn-xs btn-success' %>
           <% end %>
         </td>
       </tr>

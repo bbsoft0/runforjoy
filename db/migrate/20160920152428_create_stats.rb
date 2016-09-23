@@ -5,9 +5,9 @@ class CreateStats < ActiveRecord::Migration[5.0]
       t.integer :place
       t.string :name
       t.string :company
-      t.decimal :time
-      t.decimal :minkm
-      t.decimal :kmh
+      t.string :time
+      t.string :minkm
+      t.string :kmh
       t.integer :stars
 
       t.timestamps

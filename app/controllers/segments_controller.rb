@@ -5,7 +5,7 @@ class SegmentsController < ApplicationController
   # GET /segments
   # GET /segments.json
   def index
-    @segments = Segment.all
+    @segments = Segment.all.order('id ASC')
   end
 
   # GET /segments/1
@@ -68,6 +68,8 @@ class SegmentsController < ApplicationController
     end
 
     def segment_params
-      params.permit(:id, :name, :dist, :pr, :goal)
+        params.require(:segment).permit(:id,:name, :dist, :pr, :goal)
+        #params.permit :utf8, :segment, :authenticity_token, :commit, :id,:name, :dist, :pr, :goal
     end
+
 end

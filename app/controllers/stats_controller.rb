@@ -1,57 +1,25 @@
 class StatsController < ApplicationController
   before_action :set_stat, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-  require 'csv'
-  require 'database_cleaner'
+
 
   def index
-    @stats = Stat.all
+    @stats = Stat.where(segment_id: params[:segment_id]).order('place ASC')
+    @segment=Segment.find_by(id: params[:segment_id])
   end
 
-
   def show
-    @stats = Stat.where(segment_id: params[:id])
-    @segment=Segment.find_by(id: @stat.segment_id)
+    @stats = Stat.where(segment_id: params[:segment_id])
+    @segment=Segment.find_by(id: params[:segment_id])
   end
 
   def import
-    filename ||= "#{Rails.root}/tmp/cn1.csv"
-    csv_text = File.read(filename)
-    csv = CSV.parse(csv_text, :headers => true)
-
-    DatabaseCleaner.clean_with(:truncation, :only => %w[stats])
-    # DatabaseCleaner.strategy = :truncation, { :except => %w[segment,user] }
-
-    csv.each do |row|
-      stat_row=Stat.new
-      stat_row.place=row["place"]
-      stat_row.segment_id=1
-      stat_row.name=row["name"]
-      stat_row.time=row["time"]
-      stat_row.minkm=row["minkm"]
-      stat_row.save!
+    @segment=Segment.find_by(id: params[:segment_id])
+    if Stat.import(params[:file], @segment.dist, params[:segment_id])
+        redirect_to segment_stats_path(params[:segment_id]), notice: "File #{params[:file].original_filename} imported into current segment "
+    else
+        redirect_to segment_stats_path(params[:segment_id]), alert: "File #{params[:file].original_filename} import did not succeed. "
     end
-
-    respond_to do |format|
-        format.html { redirect_to stat_path(1), notice: 'Stat was successfully created.' }
-        format.json { render :show, status: :created, location: @stat }
-    end
-
-#redirect_to @stat, notice: 'File was successfully imported.'
-#     uploaded_io = params[:filename]
-# File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
-#   file.write(uploaded_io.read)
-# end
-
-    # filename = '../tmp/cn1.csv'
-    # options = {:chunk_size => 100, :key_mapping => {:unwanted_row => nil, :old_row_name => :new_name}}
-    # n = SmarterCSV.process(filename, options) do |chunk|
-    #       # we're passing a block in, to process each resulting hash / row (block takes array of hashes)
-    #       # when chunking is enabled, there are up to :chunk_size hashes in each chunk
-    #       MyModel.collection.insert( chunk )   # insert up to 100 records at a time
-    #end
-
-    # redirect_to :action => "new"
   end
 
   # GET /stats/new
@@ -105,12 +73,12 @@ class StatsController < ApplicationController
 
   private
     def set_stat
-        @stat = Stat.find_by(segment_id: params[:id])
-        if @stat.nil?
-          @stat=Stat.new
-          @stat.segment_id=params[:id]
-          @stat.save
-        end
+        @stat = Stat.find_by(segment_id: params[:segment_id])
+        # if @stat.nil?
+        #   @stat=Stat.new
+        #   @stat.segment_id=params[:segment_id]
+        #   @stat.save
+        # end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

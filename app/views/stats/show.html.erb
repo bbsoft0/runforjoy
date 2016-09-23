@@ -6,8 +6,6 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:segment_id) %></th>
       <th><%= model_class.human_attribute_name(:place) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:company) %></th>
@@ -20,8 +18,6 @@
   <tbody>
     <% @stats.each do |stat| %>
       <tr>
-        <td><%= link_to stat.id, stat_path(stat) %></td>
-        <td><%= stat.segment_id %></td>
         <td><%= stat.place %></td>
         <td><%= stat.name %></td>
         <td><%= stat.company %></td>
@@ -35,15 +31,28 @@
   </tbody>
 </table>
 
+ <% if @stats.size<2 %>
+    <p> No results have been entered yet for this segment </p>
+ <% end %>
+
 <br>
- <% if user_signed_in? %>
+<!--  <% if user_signed_in? %>
 
 <%= form_for @stat do |f| %>
-  <%= f.file_field :filename %>
+  <%= f.file_field  :file %>
 <% end %>
  <%= link_to "Import Results",
-            import_path,
+            import_stats_path,
             :class => 'btn btn-primary' %>
 <% else %>
 <p> Login or SIgn Up to import new data </p>
-<%end%>
+<%end%> -->
+
+<div>
+<h3>Import a CSV File</h3>
+  <%= form_tag import_stats_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= :id => @segment.id %>
+    <%= submit_tag "Import CSV", :class => 'btn btn-primary'%>
+  <% end %>
+</div>
