@@ -10,7 +10,7 @@ General statistics for all runners -  stars - personal bests.
 
 ## Demo
 
-An online <a href="#" target="http://runforjoy.herokuapp.com/">version </a> is available.
+An online <a href="http://runforjoy.herokuapp.com/">version </a> is available.
 
 
 ## Implementation Features
