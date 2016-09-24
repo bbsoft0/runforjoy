@@ -52,6 +52,8 @@ gem 'will_paginate'
 gem 'omniauth-facebook'
 gem 'simplecov'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'database_cleaner'
+
 
 group :production do
   gem 'rails_12factor'
@@ -66,7 +68,6 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'database_cleaner'
   gem 'faker'
   gem 'shoulda-matchers'
 end
