@@ -15,14 +15,14 @@ An online <a href="http://runforjoy.herokuapp.com/">version </a> is available.
 
 ## Implementation Features
 
- Authentication with devise
- Omniauth with Facebook
- RSpec Testing
- Capybara Web Testing
- Best practices
- Ajax Search
- Graphs
- Upload Results File (CSV)
+ * Authentication with devise
+ * Facebook authentication
+ * RSpec Testing
+ * Capybara Web Testing
+ * Best practices
+ * Ajax Search
+ * Graphs
+ * Upload Results File (CSV)
 
 ## Application Usage
  Make an account - entering your data or use Sign In with Facebook
@@ -53,6 +53,5 @@ Open a new issue, I'd love to help.
 3) Add Badges
 
 4) Restful API
-
 
 

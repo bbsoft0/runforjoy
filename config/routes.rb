@@ -7,6 +7,13 @@ Rails.application.routes.draw do
     end
   end
 
-  root to: "segments#index"
+  controller :pages do
+    get :about
+    get :home
+  end
+
+  root to: "pages#home"
 
 end
+
+
