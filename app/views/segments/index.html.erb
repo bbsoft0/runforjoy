@@ -44,9 +44,10 @@
  link_to "New Segment",
             new_segment_path,
             :class => 'btn btn-primary' %>
+<%= link_to "Agregate", segment_stats_path(0), class: 'btn btn-success' %>
 <% else %>
 <p> Login or SIgn Up to add new segments </p>
 <%end%>
 
 
-<%= link_to "Agregate", segment_stats_path(0), class: 'btn btn-success' %>
+
