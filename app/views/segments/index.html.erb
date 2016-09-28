@@ -41,9 +41,12 @@
 <br>
  <% if user_signed_in? %>
  <%=
- link_to t('.new', :default => t("helpers.links.new")),
+ link_to "New Segment",
             new_segment_path,
             :class => 'btn btn-primary' %>
 <% else %>
 <p> Login or SIgn Up to add new segments </p>
 <%end%>
+
+
+<%= link_to "Agregate", segment_stats_path(0), class: 'btn btn-success' %>

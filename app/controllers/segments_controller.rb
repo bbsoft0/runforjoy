@@ -11,6 +11,7 @@ class SegmentsController < ApplicationController
   # GET /segments/1
   # GET /segments/1.json
   def show
+
   end
 
   # GET /segments/new
@@ -20,6 +21,12 @@ class SegmentsController < ApplicationController
 
   # GET /segments/1/edit
   def edit
+  end
+
+
+  def AgregateUnion()
+    @agregates = Segment.all
+
   end
 
   # POST /segments
