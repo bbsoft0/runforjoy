@@ -8,8 +8,13 @@
 /.bundle
 
 # Ignore the default SQLite database.
+/config/database.yml
+/config/application.yml
+
+# Ignore sensitive data.
 /db/*.sqlite3
 /db/*.sqlite3-journal
+
 
 # Ignore all logfiles and tempfiles.
 /log/*

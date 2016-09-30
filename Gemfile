@@ -30,11 +30,22 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :test do
+  gem 'capybara'
+  gem 'faker'
+  gem 'shoulda-matchers'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'rails-controller-testing'
 end
 
+
+gem 'figaro'
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
@@ -42,6 +53,16 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'capistrano',         require: false
+  gem 'capistrano-rvm',     require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
+end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'unicorn'
 end
 
 
@@ -55,20 +76,6 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'database_cleaner'
 
 
-group :production do
-  gem 'rails_12factor'
-  gem 'unicorn'
-end
 
-group :development, :test do
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
-  gem 'rails-controller-testing'
-end
 
-group :test do
-  gem 'capybara'
-  gem 'faker'
-  gem 'shoulda-matchers'
-end
 
