@@ -58,6 +58,7 @@ group :development do
   gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
+  gem 'capistrano-rbenv', '~> 2.0',   require: false
 end
 
 group :production do

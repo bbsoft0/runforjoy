@@ -1,5 +1,5 @@
 # Change these
-server '188.166.163.34', port: 3000, roles: [:web, :app, :db], primary: true
+server '188.166.163.34', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'https://github.com/bbsoft0/RunForJoy.git'
 set :application,     'runforjoy'
