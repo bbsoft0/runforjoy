@@ -20,8 +20,8 @@ An online <a href="http://runforjoy.herokuapp.com/">version </a> is available.
  * RSpec Testing
  * Capybara Web Testing
  * Best practices
- * Ajax Search
- * Graphs
+ * Aggregate function for all runners
+ * Spark Graphs
  * Upload Results File (CSV)
 
 ## Application Usage
@@ -38,20 +38,17 @@ An online <a href="http://runforjoy.herokuapp.com/">version </a> is available.
 
   Spreadsheet like LibreOffice / Excel have the export to CSV functionality that can be used.
 
+  The button Aggregate will display all runners (all segments) with their respective form on each segment. The best data will be displayed in minkm, kmh.
+  The form graph will have  a graphical display of runner evolution with tree points empasized - min, max ,last. This is essential for discovering strengths and weaknesses of athlete along a bigger period of time.
 
 ## Issues, questions and feature requests
-Open a new issue, I'd love to help.
+Open a new request, I'd love to help.
 
 
 ## Future TODOs ideas
 
 1) Parsing data directly from sites using Resque background worker
 
-2)Display Strengths and weaknesses
-   See actual form - long term health focus
-
-3) Add Badges
-
-4) Restful API
+2) Add Badges
 
 
