@@ -1,7 +1,10 @@
 class StatsController < ApplicationController
+require 'Utils'
+require "spark_pr"
+include Spark
+
   before_action :set_stat, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-
 
   def index
     if params[:segment_id]=="0"
@@ -16,14 +19,37 @@ class StatsController < ApplicationController
             stat.place=i
           end
 
-
           @segment=Segment.first
-          @segment.name="Full Agregate "
+          @segment.name="Full Agregate"
        else
           @stats = Stat.where(segment_id: params[:segment_id]).order('place ASC')
           @segment=Segment.find_by(id: params[:segment_id])
     end
-end
+  end
+
+  def graph
+    @statsgraph = Stat.connection.select_all("SELECT  kmh
+              FROM stats
+            WHERE LOWER(name)=LOWER('#{params[:segment_id]}')
+            ORDER BY segment_id ASC  ")
+         @arraybig=[]
+         @statsgraph.each do |stat|
+              arraysmall=0.to_d
+              stat.each do |key,value|
+                arraysmall=value.to_d*10.to_i
+              end
+              3.times { @arraybig.push(arraysmall)}
+          end
+
+    respond_to do |format|
+      format.xml  { render :xml => @arraybig.to_xml }
+      format.json { render :json => @arraybig.to_json }
+      format.png { send_data(Spark.plot( @arraybig, :has_min => true, :has_max => true, 'has_last' => 'true', 'height' => '15', :step => 8 ), :type => 'image/png',
+                    :filename => "#{params[:segment_id]}.png",
+                    :disposition => 'inline') }
+    end
+  end
+
 
   def show
     @stats = Stat.where(segment_id: params[:segment_id])
@@ -39,17 +65,13 @@ end
     end
   end
 
-  # GET /stats/new
   def new
     @stat = Stat.new
   end
 
-  # GET /stats/1/edit
   def edit
   end
 
-  # POST /stats
-  # POST /stats.json
   def create
     @stat = Stat.new(stat_params)
 
@@ -64,8 +86,6 @@ end
     end
   end
 
-  # PATCH/PUT /stats/1
-  # PATCH/PUT /stats/1.json
   def update
     respond_to do |format|
       if @stat.update(stat_params)
@@ -78,8 +98,6 @@ end
     end
   end
 
-  # DELETE /stats/1
-  # DELETE /stats/1.json
   def destroy
     @stat.destroy
     respond_to do |format|
@@ -103,3 +121,4 @@ end
       params.require(:stat).permit(:segment_id, :place, :name, :company, :time, :minkm, :kmh, :stars)
     end
 end
+

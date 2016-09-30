@@ -1,6 +1,16 @@
 module Utils
   require 'time'
 
+
+    # totaltime to seconds
+  def self.getSeconds(totaltime)
+
+      #getting seconds per km
+      m = Time.parse('00:00')
+      tTime=Time.parse(totaltime)
+      tTime.to_i - m.to_i
+  end
+
     # Pace - from total time (ex 3:45) to (1:25/km)
   def self.getPace(distance, totaltime)
       dis_pace = distance.to_f

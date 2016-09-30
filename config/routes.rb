@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :segments do
     resources :stats do
       collection { post :import }
+      collection { get :graph }
     end
   end
 

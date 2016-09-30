@@ -30,11 +30,11 @@
     <%=f.error_span(:dist) %>
   </div>
   <div class="form-group">
-    <%= f.label :pr, :class => 'control-label col-lg-2' %>
+    <%= f.label :compdate, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :pr, :class => 'form-control' %>
+      <%= f.date_field :compdate, :value => Time.now.strftime('%Y-%m-%d') , :class => 'form-control'  %>
     </div>
-    <%=f.error_span(:pr) %>
+    <%=f.error_span(:compdate) %>
   </div>
   <div class="form-group">
     <%= f.label :goal, :class => 'control-label col-lg-2' %>
@@ -53,3 +53,4 @@
   </div>
 
 <% end %>
+

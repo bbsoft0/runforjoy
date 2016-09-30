@@ -1,7 +1,10 @@
+
 <%- model_class = Stat -%>
 <div class="page-header">
   <h1><%=@segment.name %></h1>
 </div>
+
+
 
 <!-- <table class="table col-sm-12 table-bordered table-striped table-condensed cf">
  -->
@@ -15,6 +18,9 @@
       <th><%= model_class.human_attribute_name(:minkm) %></th>
       <th><%= model_class.human_attribute_name(:kmh) %></th>
       <th><%= model_class.human_attribute_name(:stars) %></th>
+      <% if @segment.name=="Full Agregate" %>
+          <th style="width: 15%;">Form (min, max, last)</th>
+      <% end %>
     </tr>
   </thead>
   <tbody>
@@ -27,6 +33,14 @@
         <td><%= stat.minkm %></td>
         <td><%= stat.kmh %></td>
         <td><img src= <%= asset_path('Star' + stat.stars.to_s + '.png') %> </td>
+        <% if @segment.name=="Full Agregate" %>
+            <td align="center">
+              <%=
+              image_tag(graph_segment_stats_path(stat.name, :format => 'png'))
+              %>
+            </td>
+        <% end %>
+
       </tr>
     <% end %>
   </tbody>

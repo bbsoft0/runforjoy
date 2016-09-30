@@ -8,7 +8,7 @@
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:dist) %></th>
-      <th><%= model_class.human_attribute_name(:pr) %></th>
+      <th><%= model_class.human_attribute_name(:compdate) %></th>
       <th><%= model_class.human_attribute_name(:goal) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -19,7 +19,7 @@
         <td><%= link_to segment.id, segment_path(segment) %></td>
         <td><%= segment.name %></td>
         <td><%= segment.dist %></td>
-        <td><%= segment.pr %></td>
+        <td><%= segment.compdate %></td>
         <td><%= segment.goal %></td>
         <td>
           <% if user_signed_in? %>
