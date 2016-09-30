@@ -5,6 +5,10 @@
 # {Dan Nugent}[mailto:nugend@gmail.com] and {Geoffrey Grosenbach}[mailto:boss@topfunky.com]
 #
 # png creation based on http://www.whytheluckystiff.net/bumpspark/
+#
+# updated in sept 2016 by Barbu Bujor
+# Corrected a number of issues with Nan which appeared when non distinct data was provided.
+#
 
 class SparkCanvas
   require 'zlib'
