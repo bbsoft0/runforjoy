@@ -24,11 +24,6 @@ class SegmentsController < ApplicationController
   end
 
 
-  def AgregateUnion()
-    @agregates = Segment.all
-
-  end
-
   # POST /segments
   # POST /segments.json
   def create

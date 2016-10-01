@@ -20,7 +20,10 @@ include Spark
           end
 
           @segment=Segment.first
-          @segment.name="Full Agregate"
+          if (@segment.nil?)
+              @segment=Segment.new
+          end
+              @segment.name="Full Agregate"
        else
           @stats = Stat.where(segment_id: params[:segment_id]).order('place ASC')
           @segment=Segment.find_by(id: params[:segment_id])
@@ -40,6 +43,9 @@ include Spark
               end
               3.times { @arraybig.push(arraysmall)}
           end
+      if @statsgraph.size<=0
+        0
+      end
 
     respond_to do |format|
       format.xml  { render :xml => @arraybig.to_xml }
