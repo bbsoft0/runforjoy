@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'bd6280e2e93fb058de06926fa4f9d817aeaee3154b613e6d8461535a422fdffb0615aeedb41f5e701d1f3657f55268f3068198a302424a82d170cdf2047c7350'
+  # config.secret_key = 'adf43d111efe6b4c4169b40da19fecd8ce4a8ed3b70e2164f522e95407cad60bd21abed36e426dfdfa3c38ad21d215889c1b7ffe414842a5935f9e6a77f1491e'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -108,7 +108,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '3e794b594d858ba469525a827ef4a7b5597973ce3e411a4ab830802dd51a2477a19006cb6201de8527bd6102eb6ec055e3312501fc1f43f18b893cbd0fe717b6'
+  # config.pepper = 'c428bd4f13a706e486b1e55f1f74769610ff2feefc92dfc0d478f4773a644564ed6fc24ec13d0d369a8768d573b8b2fd2aa377a9ddf0e5351d4a11807e88e282'
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -247,12 +247,12 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
+  # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   if Rails.env.production?
     config.omniauth :facebook, "343270562672949", "dec93a74d64b3201e518496c529ccc5d"
   else
     config.omniauth :facebook, "187139035049213", "bbd05fbf3b66db44aa214760e3e5575b"
   end
-
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
@@ -276,4 +276,6 @@ Devise.setup do |config|
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
+  config.secret_key = '6f7c3e9008c9a97bce8b072dd392833389af8e8e95289bef1943b119333ea6a79f0ba39f651cb9406087bb3a9997ea2e6f8f4964561f1c8655761f4e0ffec2ba'
+
 end

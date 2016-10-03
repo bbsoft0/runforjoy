@@ -1,27 +1,17 @@
-# Load DSL and Setup Up Stages
-require 'capistrano/setup'
-require 'capistrano/deploy'
+# Load DSL and set up stages
+require "capistrano/setup"
 
-require 'capistrano/rails'
+# Include default deployment tasks
+require "capistrano/deploy"
+
+require 'capistrano/rbenv'
+require 'capistrano/rbenv_install'
 require 'capistrano/bundler'
-require 'capistrano/puma'
+require 'capistrano/rails'
+require 'capistrano/unicorn_nginx'
+require 'capistrano/postgresql'
+require 'capistrano/safe_deploy_to'
+require 'capistrano/ssh_doctor'
 
-# some requires above
-
-task :use_rvm do
-  require 'capistrano/rvm'
-end
-
-task :use_rbenv do
-  require 'capistrano/rbenv'
-end
-
-#task production: :use_rvm
-task production: :use_rbenv
-task staging: :use_rbenv
-
-set :rbenv_custom_path, '/home/bbsoft0/.rbenv/versions/2.3.1/bin'
-set :rbenv_ruby, '2.3.1'
-
-# Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
-Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
+# Load custom tasks from `lib/capistrano/tasks` if you have any defined
+Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
