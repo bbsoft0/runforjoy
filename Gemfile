@@ -54,7 +54,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'capistrano', '>= 3.2.1'
-  gem 'capistrano-rbenv', '~> 2.0'           # idiomatic rbenv support
+  gem 'capistrano-rbenv', '~> 2.0.4'           # idiomatic rbenv support
   gem 'capistrano-rbenv-install'             # ensures the right ruby version is installed
   gem 'capistrano-bundler', '~> 1.1.2'       # support for bundler
   gem 'capistrano-rails', '~> 1.0'           # automatic migrations and asset compilation

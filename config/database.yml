@@ -14,7 +14,7 @@ development:
   encoding: unicode
   database: runforjoy_development
   username: bbsoft0
-  password: <%= ENV['runforjoy_DATABASE_PASSWORD'] %>
+  password: bbsoftm
   host: localhost
   port: 5432
 
