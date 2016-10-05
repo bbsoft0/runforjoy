@@ -43,7 +43,7 @@ include Spark
               end
               3.times { @arraybig.push(arraysmall)}
           end
-      if @statsgraph.size<=0
+      if @statsgraph.count<=0
         0
       end
 
