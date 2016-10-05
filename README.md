@@ -10,7 +10,7 @@ General statistics for all runners -  stars - personal bests.
 
 ## Demo
 
-An online <a href="http://runforjoy.herokuapp.com/">version </a> is available.
+An online <a href="http://runforjoy.snipermed.com/">version </a> is available.
 
 
 ## Implementation Features
@@ -21,7 +21,7 @@ An online <a href="http://runforjoy.herokuapp.com/">version </a> is available.
  * Capybara Web Testing
  * Best practices
  * Aggregate function for all runners
- * Spark Graphs
+ * Spark Graphs - (made some fixes to this gem - pull request)
  * Upload Results File (CSV)
 
 ## Application Usage
