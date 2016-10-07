@@ -39,7 +39,7 @@ An online <a href="http://runforjoy.snipermed.com/">version </a> is available.
   Spreadsheet like LibreOffice / Excel have the export to CSV functionality that can be used.
 
   The button Aggregate will display all runners (all segments) with their respective form on each segment. The best data will be displayed in minkm, kmh.
-  The form graph will have  a graphical display of runner evolution with tree points empasized - min, max ,last. This is essential for discovering strengths and weaknesses of athlete along a bigger period of time.
+  The form graph will have  a graphical display of runner evolution with tree points empasized - min, max ,last. This is essential for discovering strengths and weaknesses of athlete along a larger period of time.
 
 ## Issues, questions and feature requests
 Open a new request, I'd love to help.
