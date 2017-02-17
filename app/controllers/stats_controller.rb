@@ -115,11 +115,6 @@ include Spark
   private
     def set_stat
         @stat = Stat.find_by(segment_id: params[:segment_id])
-        # if @stat.nil?
-        #   @stat=Stat.new
-        #   @stat.segment_id=params[:segment_id]
-        #   @stat.save
-        # end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

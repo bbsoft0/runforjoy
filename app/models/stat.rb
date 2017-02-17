@@ -9,28 +9,24 @@ class Stat < ApplicationRecord
     filename ||=file.path
     csv_text = File.read(filename)
     csv = CSV.parse(csv_text, :headers => true)
-
-
         Stat.where(:segment_id => segment_id).delete_all
         #Used only for reseting ids
         DatabaseCleaner.clean_with(:truncation, :only => %w[])
 
+          i = 0
           csv.each do |row|
+            i = i + 1
             stat_row=Stat.new
-            stat_row.place=row["place"]
+            stat_row.place=i
             stat_row.segment_id=segment_id
-            stat_row.name=row["name"]
-            stat_row.company=row["company"]
+            stat_row.name=row["name"].lstrip
+            stat_row.company=row["company"].lstrip if row["company"]
             stat_row.time=row["time"]
             stat_row.minkm=Utils.getPace(distance, row["time"])
             stat_row.kmh=Utils.getKmh(distance, row["time"])
             stat_row.stars=Utils.getLevel(distance, row["time"])
             stat_row.save!
           end
-
-
-
   end
-
 
 end

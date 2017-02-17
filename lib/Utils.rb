@@ -1,8 +1,7 @@
 module Utils
   require 'time'
 
-
-    # totaltime to seconds
+  # totaltime to seconds
   def self.getSeconds(totaltime)
 
       #getting seconds per km
@@ -11,7 +10,7 @@ module Utils
       tTime.to_i - m.to_i
   end
 
-    # Pace - from total time (ex 3:45) to (1:25/km)
+  # Pace - from total time (ex 3:45) to (1:25/km)
   def self.getPace(distance, totaltime)
       dis_pace = distance.to_f
 
@@ -30,7 +29,7 @@ module Utils
       min.to_f.floor.to_s + ":" + sec.to_f.floor.to_s.rjust(2, '0')
   end
 
-#DistanceKm * ((FinishHour + FinMin) - (StartHour + StartMin)), " km/h"
+  #DistanceKm * ((FinishHour + FinMin) - (StartHour + StartMin)), " km/h"
   def self.getKmh(distance, totaltime)
       dis_pace = distance.to_f
 
@@ -42,7 +41,7 @@ module Utils
   end
 
 
-def self.getLevel(distance, totaltime)
+  def self.getLevel(distance, totaltime)
       dis_pace = distance.to_f
 
       #getting seconds per km
@@ -72,6 +71,6 @@ def self.getLevel(distance, totaltime)
       end
 
       level
-end
+  end
 
 end

@@ -71,7 +71,6 @@ class SegmentsController < ApplicationController
 
     def segment_params
         params.require(:segment).permit(:id,:name, :dist, :compdate, :goal)
-        #params.permit :utf8, :segment, :authenticity_token, :commit, :id,:name, :dist, :compdate, :goal
     end
 
 end

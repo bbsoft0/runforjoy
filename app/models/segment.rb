@@ -3,9 +3,4 @@ class Segment < ApplicationRecord
 
   validates  :name,
   presence: true
-
-
-
-
-
 end
