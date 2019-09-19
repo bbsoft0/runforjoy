@@ -1,84 +1,52 @@
 source 'https://rubygems.org'
-ruby File.read '.ruby-version'
+ruby '2.3.1'
 
-# Use Postgresql
-gem 'pg'
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
-# Use Puma as the app server
-gem 'puma', '~> 3.0'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
+
+gem 'activesupport', '~> 5.0'
+gem 'actionview', '~> 5.0'
+gem 'actionpack', '~> 5.0'
+gem 'railties', '~> 5.0'
+
+gem 'actioncable', '~> 5.0'
+gem 'globalid', '~> 0.4'
+gem 'activejob', '~> 5.0'
+gem 'actionmailer', '~> 5.0'
+gem 'activemodel', '~> 5.0'
+gem 'activerecord', '~> 5.0'
+
 gem 'coffee-rails', '~> 4.2'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-group :test do
-  gem 'capybara'
-  gem 'faker'
-  gem 'shoulda-matchers'
-end
-
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
-  gem 'rails-controller-testing'
-end
-
-
-
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console'
-  gem 'listen', '~> 3.0.5'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'capistrano', '>= 3.2.1'
-  gem 'capistrano-rbenv', '~> 2.0.4'           # idiomatic rbenv support
-  gem 'capistrano-rbenv-install'             # ensures the right ruby version is installed
-  gem 'capistrano-bundler', '~> 1.1.2'       # support for bundler
-  gem 'capistrano-rails', '~> 1.0'           # automatic migrations and asset compilation
-  gem 'capistrano-unicorn-nginx', '~> 2.0'   # plug-n-play nginx and unicorn
-  gem 'capistrano-postgresql', '~> 3.0'      # plug-n-play postgresql
-  gem 'capistrano-safe-deploy-to', '~> 1.1'  # ensures deploy path for the app exists
-  gem 'capistrano-ssh-doctor'                # helps with debugging ssh-agent forwarding
-
-end
+gem 'responders', '~> 2.4'
+gem 'devise', '~> 4.7'
+gem 'hashie', '~> 3.6'
+gem 'jbuilder', '~> 2.9'
+gem 'jquery-rails', '~> 4.3'
+gem 'sprockets', '~> 3.7'
+gem 'sprockets-rails', '~> 3.2'
+gem 'rails', '~> 5.0'
+gem 'rails-controller-testing', '~> 1.0'
+gem 'rails_serve_static_assets', '~> 0.0'
+gem 'rails_stdout_logging', '~> 0.0'
+gem 'sass', '~> 3.7'
+gem 'sass-rails', '~> 5.0'
+gem 'simplecov', '~> 0.17'
+gem 'turbolinks', '~> 5.2'
+gem 'twitter-bootstrap-rails', '~> 4.0'
+gem 'will_paginate', '~> 3.1'
+    
+gem 'byebug', '~> 11.0', require: false
+gem 'database_cleaner', '~> 1.7', require: false
+gem 'pg', '~> 1.1', require: false
+gem 'uglifier', '~> 4.1', require: false
+gem 'will_paginate-bootstrap', '~> 1.0', require: false
+    
+gem 'puma', '~> 3.0'
+gem 'omniauth-facebook'
 
 group :production do
-  gem 'rails_12factor'
-  gem 'unicorn'
+  gem 'rails_12factor', '~> 0.0', require: false
 end
 
-
-gem 'devise'
-gem 'twitter-bootstrap-rails'
-gem 'will_paginate-bootstrap'
-gem 'will_paginate'
-gem 'omniauth-facebook'
-gem 'simplecov'
-gem 'sprockets-rails', :require => 'sprockets/railtie'
-gem 'database_cleaner'
+gem 'gem_bench', :group => :console
 
 
 

@@ -2,8 +2,8 @@ production:
   adapter: postgresql
   encoding: unicode
   database: runforjoy_production
-  username: bbsoft0
-  password: <%= ENV['runforjoy_DATABASE_PASSWORD'] %>
+  username: postgres
+  password: demo_aa
   host: localhost
   port: 5432
 
@@ -13,8 +13,8 @@ development:
   adapter: postgresql
   encoding: unicode
   database: runforjoy_development
-  username: bbsoft0
-  password: bbsoftm
+  username: postgres
+  password: demo_aa
   host: localhost
   port: 5432
 
