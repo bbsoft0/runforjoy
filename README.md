@@ -10,7 +10,7 @@ General statistics for all runners -  stars - personal bests.
 
 ## Demo
 
-An online <a href="http://runforjoy.snipermed.com/">version </a> is available.
+An online <a href="http://runforjoy.snipermed.ro/">version </a> is available.
 
 
 ## Implementation Features
@@ -47,7 +47,7 @@ Open a new request, I'd love to help.
 
 ## Future TODOs ideas
 
-1) Parsing data directly from sites using Resque background worker
+1) Data update using API
 
 2) Add Badges
 
