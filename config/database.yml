@@ -2,9 +2,10 @@ production:
   adapter: postgresql
   encoding: unicode
   database: runforjoy_production
-  username: postgres
-  password: demo_aa
-  host: localhost
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  host: srv-captain--postgres-db
+  timeout: 5000
   port: 5432
 
 
@@ -13,9 +14,10 @@ development:
   adapter: postgresql
   encoding: unicode
   database: runforjoy_development
-  username: postgres
-  password: demo_aa
-  host: localhost
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  host: srv-captain--postgres-db
+  timeout: 5000
   port: 5432
 
 

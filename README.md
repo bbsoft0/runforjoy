@@ -24,6 +24,10 @@ An online <a href="http://runforjoy.snipermed.ro/">version </a> is available.
  * Spark Graphs - (made some fixes to this gem - pull request)
  * Upload Results File (CSV)
 
+v 0.1.0	
+  Optimized gems using gem_bench
+  Upgraded to ruby 2.5.1, rails 5.2
+
 ## Application Usage
  Make an account - entering your data or use Sign In with Facebook
 
