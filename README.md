@@ -48,6 +48,20 @@ v 0.1.0
 ## Issues, questions and feature requests
 Open a new request, I'd love to help.
 
+## Caprover Environment Variables
+
+RAILS_LOG_TO_STDOUT
+
+POSTGRES_USER
+
+POSTGRES_PASSWORD
+
+RAILS_ENV
+
+RAILS_SERVE_STATIC_FILES
+
+APP_SECRET
+
 
 ## Future TODOs ideas
 
