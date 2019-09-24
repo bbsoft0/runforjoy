@@ -58,6 +58,7 @@ class SegmentsController < ApplicationController
   # DELETE /segments/1.json
   def destroy
     @segment.destroy
+    Stat.where(segment_id: @segment.id).destroy_all
     respond_to do |format|
       format.html { redirect_to segments_url, notice: 'Segment was successfully destroyed.' }
       format.json { head :no_content }

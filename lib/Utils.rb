@@ -12,12 +12,11 @@ module Utils
 
   # Pace - from total time (ex 3:45) to (1:25/km)
   def self.getPace(distance, totaltime)
+    begin
       dis_pace = distance.to_f
 
       #getting seconds per km
-      m = Time.parse('00:00')
-      tTime=Time.parse(totaltime)
-      seconds = (tTime.to_i - m.to_i)
+      seconds=totaltime.split(':').map { |a| a.to_i }.inject(0) { |a, b| a * 60 + b}
       pace = seconds / dis_pace
 
       #getting minutes from pace
@@ -27,27 +26,34 @@ module Utils
       sec = pace % 60
 
       min.to_f.floor.to_s + ":" + sec.to_f.floor.to_s.rjust(2, '0')
+    rescue => ex
+        #logger.error ex.message
+    end
   end
 
   #DistanceKm * ((FinishHour + FinMin) - (StartHour + StartMin)), " km/h"
   def self.getKmh(distance, totaltime)
+    begin
       dis_pace = distance.to_f
 
-      m = Time.parse('00:00')
-      tTime=Time.parse(totaltime)
-      seconds = (tTime.to_i - m.to_i)
+      seconds=totaltime.split(':').map { |a| a.to_i }.inject(0) { |a, b| a * 60 + b}
+      #m = Time.parse('00:00')
+      #tTime=Time.parse(totaltime)
+      #seconds = (tTime.to_i - m.to_i)
       kmh = dis_pace *3600/ seconds
       sprintf('%.2f', kmh)
+    rescue => ex
+        #logger.error ex.message
+    end
   end
 
 
   def self.getLevel(distance, totaltime)
+    begin
       dis_pace = distance.to_f
 
       #getting seconds per km
-      m = Time.parse('00:00')
-      tTime=Time.parse(totaltime)
-      seconds = (tTime.to_i - m.to_i)
+      seconds=totaltime.split(':').map { |a| a.to_i }.inject(0) { |a, b| a * 60 + b}
       pace = seconds / dis_pace
 
       level=0
@@ -71,6 +77,10 @@ module Utils
       end
 
       level
+    rescue => ex
+        #logger.error ex.message
+        level
+    end
   end
 
 end

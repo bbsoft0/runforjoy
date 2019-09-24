@@ -33,17 +33,17 @@ gem 'turbolinks'
 gem 'twitter-bootstrap-rails'
 gem 'will_paginate'
     
-gem 'database_cleaner',  require: false
 gem 'pg', require: false
 gem 'uglifier',require: false
 gem 'will_paginate-bootstrap', require: false
 gem 'puma', '~> 4.1', require: false
 gem 'omniauth-facebook'
-
+gem 'minitest'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri, require: false
+	gem 'byebug', platform: :mri, require: false
+	gem 'database_cleaner',  require: false
 end
 
 

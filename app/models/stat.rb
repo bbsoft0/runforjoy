@@ -11,7 +11,7 @@ class Stat < ApplicationRecord
     csv = CSV.parse(csv_text, :headers => true)
         Stat.where(:segment_id => segment_id).delete_all
         #Used only for reseting ids
-        DatabaseCleaner.clean_with(:truncation, :only => %w[])
+        # DatabaseCleaner.clean_with(:truncation, :only => %w[])
 
           i = 0
           csv.each do |row|
@@ -21,6 +21,9 @@ class Stat < ApplicationRecord
             stat_row.segment_id=segment_id
             stat_row.name=row["name"].lstrip
             stat_row.company=row["company"].lstrip if row["company"]
+            if row["category"]
+              stat_row.sex=row["category"].lstrip[0]
+            end
             stat_row.time=row["time"]
             stat_row.minkm=Utils.getPace(distance, row["time"])
             stat_row.kmh=Utils.getKmh(distance, row["time"])
