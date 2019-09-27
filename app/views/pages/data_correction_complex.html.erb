@@ -1,0 +1,69 @@
+<%- model_class = Stat -%>
+<div class="page-header">
+  <h1>Data Correction Complex</h1>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:place) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:count1) %></th>
+      <th><%= model_class.human_attribute_name(:left) %></th>
+      <th><%= model_class.human_attribute_name(:reversed_name) %></th>
+      <th><%= model_class.human_attribute_name(:count2) %></th>
+      <th><%= model_class.human_attribute_name(:right) %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @stats_group.each_with_index do |(key, value), index| %>
+      <% if @stats_group.key?(reverse_words(key)) %>
+      <% if value<=@stats_group[reverse_words(key)] %>
+   <tr>
+        <td><%= index+1 %></td>
+        <td><%= key %></td>
+        <td><%= value %></td>
+
+        <% if @stats_group.key?(reverse_words(key)) %>
+         <% if value<=@stats_group[reverse_words(key)] %>
+              <td>
+                <%= link_to "left", correct_name_path(name_to_be_changed:reverse_words(key),correct_name:key), class: 'btn btn-xs btn-success' %>
+              </td>
+              <td><%= reverse_words(key) %></td>
+              <td><%= @stats_group[reverse_words(key)] %></td>
+              <td>
+                <%= link_to "right", correct_name_path(name_to_be_changed:key,correct_name:reverse_words(key)), class: 'btn btn-xs btn-success' %>
+              </td>
+             </td>
+         <% else %>
+              <td>   </td>
+              <td>   </td>
+         <% end %>
+        <% else %>
+          <td>   </td>
+          <td>   </td>
+        <% end %>
+      </tr>
+    <% end %>
+    <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+ <% if @stats_group.size<2 %>
+    <p> No results have been entered yet for this segment </p>
+ <% end %>
+
+<br>
+
+<hr>
+
+<div>
+<h3>Set all names to lowercase</h3>
+  <%= button_to "Set lowercase", set_lowercase_path, :class => "btn btn-primary", :method => :get  %>
+</div>
+
+<div>
+<h3>Set name to most used version</h3>
+    <%= button_to "Correct Name", auto_correct_name_path, :class => "btn btn-primary", :method => :get  %>
+</div>

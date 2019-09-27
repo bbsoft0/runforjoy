@@ -32,4 +32,6 @@ class Stat < ApplicationRecord
           end
   end
 
+
+
 end

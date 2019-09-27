@@ -23,7 +23,7 @@ include Spark
           if (@segment.nil?)
               @segment=Segment.new
           end
-              @segment.name="Full Agregate"
+          @segment.name="Full Agregate"
        else
           @stats = Stat.where(segment_id: params[:segment_id]).order('place ASC')
           @segment=Segment.find_by(id: params[:segment_id])
@@ -31,15 +31,15 @@ include Spark
   end
 
   def graph
-    @statsgraph = Stat.connection.select_all("SELECT  kmh
-              FROM stats
-            WHERE LOWER(name)=LOWER('#{params[:segment_id]}')
-            ORDER BY segment_id ASC  ")
+
+    @statsgraph = Stat.connection.select_all("SELECT  kmh FROM stats INNER JOIN segments 
+    ON segments.id=stats.segment_id WHERE stats.name='#{params[:segment_id]}'
+    ORDER BY segments.compdate ASC  ")
          @arraybig=[]
          @statsgraph.each do |stat|
               arraysmall=0.to_d
               stat.each do |key,value|
-                arraysmall=value.to_d*10.to_i
+                arraysmall=value.to_d*20.to_i
               end
               3.times { @arraybig.push(arraysmall)}
           end
@@ -50,7 +50,7 @@ include Spark
     respond_to do |format|
       format.xml  { render :xml => @arraybig.to_xml }
       format.json { render :json => @arraybig.to_json }
-      format.png { send_data(Spark.plot( @arraybig, :has_min => true, :has_max => true, 'has_last' => 'true', 'height' => '15', :step => 8 ), :type => 'image/png',
+      format.png { send_data(Spark.plot( @arraybig, :has_min => true, :has_max => true, 'has_last' => 'true', 'height' => '15', :step => 12 ), :type => 'image/png',
                     :filename => "#{params[:segment_id]}.png",
                     :disposition => 'inline') }
     end
