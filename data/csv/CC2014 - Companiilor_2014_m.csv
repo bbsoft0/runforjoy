@@ -1,0 +1,389 @@
+place,company,name,time
+1,Centrul Ratiu pentru Democratie,Adi Dohotaru,0:18:07
+2,Cloud Troopers Intl,Catalin Sanpetrean,0:18:22
+3,SOFTVISION,Bogdan Moldovan,0:18:25
+4,EBS,Roman Rares,0:18:35
+5,Scoala de Politie,Dinu Vlad,0:18:53
+6,Accesa,Negus Ovidiu,0:18:55
+7,iQuest,Adrian Salajan,0:19:10
+8,Universitatea Tehnica,Vancea Cristian-Cosmin,0:19:13
+9,BG Soft,Hent Marius,0:19:31
+10,PFA Paul Radu,Paul Radu Victor,0:19:54
+11,Gama Software,Slovak Ianco,0:20:04
+12,SOFTVISION,Florin Ciufudean,0:20:06
+13,Revive,Daniel Ianos,0:20:27
+14,TRANSART,Lazar Cristian,0:20:28
+15,US FOOD NETWORK SA,SZELES ZSOLT,0:20:34
+16,EXL SERVICE ROMANIA,SHADI SAADEDDIN,0:20:38
+17,Lapp Insulators,Kis Radu,0:21:00
+18,IQ Energy,Mirastian Adrian Daniel,0:21:06
+19,Euro Hiparion,Matyas Zoltan,0:21:11
+20,Studium Green SRL,Szabo Ferenc,0:21:14
+21,Pentalog,Maxim Andrei,0:21:34
+22,Lifestyle Company,Kovacs Cristian,0:21:50
+23,GSR,Turc Paul Dorin,0:21:57
+24,Energom,Nagy Istvan,0:21:58
+25,DIFERIT S.R.L.,Manea Cristian,0:21:59
+26,Gameloft,Popa Razvan,0:22:02
+27,ISDC,Nagy Istvan,0:22:03
+28,Nordlogic Software,Raul Olaru,0:22:10
+29,Energom SRL,Bulubasa Radu,0:22:12
+30,Hunnebeck Romania SRL,Szilard Somogyi,0:22:14
+31,Spyhce,Florin Paul Suciu,0:22:16
+32,Hotel Stil,Reus Alin,0:22:18
+33,Grandemar,Tulbure Gabriel Dorin,0:22:23
+34,Bissoft,Badiu Ionut Alexandru,0:22:24
+35,Raiffeisen Bank,Stanciu George Adrian,0:22:28
+36,MSG SYSTEMS ROMANIA,Cosmin Chindris,0:22:28
+37,ISDC,GAITAN DENIS,0:22:30
+38,US FOOD NETWORK SA,VAIDA BOGDAN,0:22:43
+39,MSG SYSTEMS ROMANIA,Marius Svab,0:22:44
+40,Robert Bosch SRL,Resiga Paul,0:22:44
+41,Energom SRL,Mangu Lucian,0:22:48
+42,Evozon,Oltean Claudiu,0:22:53
+43,Nastimed,Biro Jozsef,0:22:56
+44,Autoworld,Juhasz Endre,0:23:02
+45,CSRupicapra,Bogya Zoltan,0:23:04
+46,Yardi Romania,Wilkinson Andrew,0:23:08
+47,Emerson S.R.L.,Chisu Bogdan,0:23:12
+48,AROBS Transilvania Software,Cipariu Tudor Horea,0:23:18
+49,National Instruments Romania,Gyorfi Tamas,0:23:27
+50,National Instruments Romania,Pop Rares,0:23:27
+51,YSS,Kiss Gavril,0:23:31
+52,Steelcase,Albert Gabriel,0:23:36
+53,KPMG,Abrudan Marius,0:23:37
+54,STRATEC BIOMEDICAL,Bujor Barbu,0:23:39
+55,EXL SERVICE ROMANIA,VASILE MOISIL,0:23:40
+56,ISDC Romania,Bogdan Goada,0:23:41
+57,Genpact Srl.,Mikacs Marian-Dorin,0:23:42
+58,SOFTVISION,Iulian Timar,0:23:45
+59,PRIMARIA CLUJ-NAPOCA,ROBU CATALIN,0:23:53
+60,DIFERIT S.R.L.,Tura Adrian Flavius,0:23:59
+61,Evozon Systems,Tepus Ionut Andrei,0:24:03
+62,Fortech SRL,Bacanu Sergiu,0:24:03
+63,Napoca Software,Mila Laszlo,0:24:03
+64,Autoworld,Vekony Szabolcs,0:24:04
+65,STRATEC BIOMEDICAL,Catana Cristian,0:24:12
+66,SYNLAB,Sergiu Irimies,0:24:16
+67,Raiffeisen Bank,Todor Mirel,0:24:20
+68,Recognos Romania,Parau Paul,0:24:20
+69,Aegon,Barbu Sergiu,0:24:21
+70,SOFTVISION,Andrei Bacalu,0:24:22
+71,Garmin Cluj,Fancsali Andras,0:24:22
+72,Bis Soft,Popa Andrei Rares,0:24:26
+73,Robert Bosch SRL,Domnita Tudor,0:24:27
+74,CORATIM s.r.l,Ciobotea Claudiu Florin,0:24:28
+75,ENDAVA,Chis Ionut,0:24:28
+76,Evozon,Grezer Peter,0:24:28
+77,Nordlogic Software,Pirvu Doru,0:24:30
+78,Balan Mugur Ciprian PFA,Balan Mugur,0:24:34
+79,Codespring,Attila Farkas,0:24:34
+80,GORMET S.R.L.,Sabou Adrian Florin,0:24:36
+81,US FOOD NETWORK SA,NEGRU CEZAR,0:24:39
+82,KPMG,Crisan Ionut,0:24:40
+83,KPMG,Niri Alex,0:24:41
+84,Cloudlink,Horvath Zsolt,0:24:44
+85,INFOWORLD,Kiss Tibor,0:24:44
+86,PFA Agoston Norbert,Agoston Norbert,0:24:49
+87,UMT Software,Bradescu Tudor,0:24:51
+88,KPMG,M uresan Andrei,0:24:52
+89,VLG RO,Leoca Serban,0:24:54
+90,Emerson,Sebesi Szabolcs,0:24:57
+91,GSR,Tripon Daniel,0:25:01
+92,Gameloft,Bodea Daniel Andrei,0:25:02
+93,Alianz Tiriac,Crisan Cornel,0:25:03
+94,ENDAVA,Gabriel Carabat,0:25:10
+95,SOFTVISION,Istvan Kis,0:25:21
+96,MBI Marketing Beratug,Calugar Bogdan,0:25:21
+97,STRATEC BIOMEDICAL,Ciobotariu-Boer Tudor,0:25:23
+98,PULL AND BEAR,DORCA STELIAN,0:25:23
+99,Pull And Bear,Stincel Dan,0:25:23
+100,PROVALCON GLOBAL SRL,MARCHIS MAXIMILIAN,0:25:29
+101,Austral Trade,Stepa Daniel,0:25:29
+102,Robert Bosch SRL,Erdei Sergiu,0:25:30
+103,DIFERIT S.R.L.,Jbanca Valentin,0:25:34
+104,Pentalog,Nemes Alexandru,0:25:37
+105,Genpact Srl.,Nistor Valentin,0:25:39
+106,Genpact Srl.,Fabian Istvan,0:25:45
+107,Robert Bosch,Bucur Alin,0:25:49
+108,AROBS Transilvania Software,Stangu Ciprian,0:25:50
+109,Robert Bosch SRL,ChibulcuteanTudor,0:25:53
+110,STRATEC BIOMEDICAL,Mates Catalin,0:25:57
+111,MBI MarketingBeratung and Insurance,Petrindean Victor,0:26:01
+112,AEGON,Grigorovici Calin,0:26:04
+113,DENNVER COMIMPEX,Telegdy Zsolt,0:26:07
+114,Gameloft,Stupcanu Alexandru,0:26:14
+115,Deloitte,Marius Cornel Moldovan,0:26:14
+116,US FOOD NETWORK SA,TRAISTARU RADU,0:26:18
+117,HP,Botea Calin,0:26:19
+118,Yardi Romania,Girda Alex,0:26:23
+119,Emerson,Mihai Octavian Bogdan,0:26:24
+120,HP Software,David Adrian,0:26:25
+121,EXIMTUR,Dorel Muresan,0:26:29
+122,Weber Sagin Gobain,Popescu Mircea,0:26:34
+123,Cosmetic Plant Prodcom SRL,Boar Sebastian,0:26:39
+124,INFOWORLD,Molnar Arthur,0:26:45
+125,SOFTVISION,Adrian Nica,0:26:47
+126,Emerson SRL,Adrian Vulea,0:26:47
+127,iSDC,Crisan-Bodea Mihai,0:26:49
+128,SOFTVISION,Sergiu Nistor,0:26:49
+129,BELLA CLASSIC SRL,BABOS MIHAI,0:26:51
+130,Spyhce,Andrei Avram,0:27:05
+131,Bis Soft,Marius Nechiti,0:27:05
+132,Endava,Bogdan Lucaciu,0:27:10
+133,AROBS Transilvania Software,Onet Lucian,0:27:18
+134,Yardi Romania,Balazs Levente,0:27:19
+135,SDL,Razvan Moldovan-Pop,0:27:23
+136,MHP Consulting Romania,Gabor Katona,0:27:25
+137,Alianz Tiriac,Bartha Botond,0:27:25
+138,GORMET S.R.L.,Campian Andrei,0:27:27
+139,Bombardier,Crecan Andrei,0:27:27
+140,STRATEC BIOMEDICAL,Pinte Dan,0:27:29
+141,Energom SRL,Fesneau Pascal,0:27:32
+142,Emerson SRL,Andrei Astilean,0:27:32
+143,SDL,Ionut Conea,0:27:36
+144,SDL,Cristian Birtocean,0:27:47
+145,Nordlogic Software,Adrian Hangan,0:27:50
+146,SDL,Mihai Toth,0:27:57
+147,SCA Budusan si Asociatii,Mos Dan,0:28:00
+148,Pentalog,Marius Lupu,0:28:05
+149,Papp Attila Istvan PFA,Papp Attila Istvan,0:28:09
+150,US FOOD NETWORK SA,MAN OVIDIU,0:28:11
+151,SOFTVISION,Calin Chiorean,0:28:13
+152,Energom SRL,Chis Jozsef,0:28:13
+153,Nordlogic Software,Csete Csaba,0:28:17
+154,Autoworld,Pascu Andrei,0:28:22
+155,SOFTVISION,Mihai Tatar,0:28:22
+156,SOFTVISION,Bogdan Mihalache,0:28:23
+157,SMART S.A. Sucursala Cluj,Boanda Mihail Marius,0:28:25
+158,MSG SYSTEMS ROMANIA,Cristian David,0:28:25
+159,BG Soft,Vrabiescu Lucian,0:28:28
+160,Garmin,Mihai Lucian Ionut,0:28:31
+161,EMERSON,Turcu Dumitru Dan,0:28:42
+162,Robert Bosch STL,Padurean Bogdan,0:28:45
+163,Bis Soft,Daniel David,0:28:47
+164,SCA Budusan si Asociatii,Talpes David,0:28:48
+165,KPMG,Tudor Morar,0:28:58
+166,Robert Bosch SRL,Bota Ioan,0:28:58
+167,Autoworld,Duca Calin,0:29:01
+168,SOFTVISION,Lucian Maier,0:29:04
+169,Nastimed,Daraban Tudor Virgil,0:29:09
+170,Emerson SRL,Cimpan Ovidiu,0:29:13
+171,UMT Software,Cantor Vlad,0:29:14
+172,Cosmetic Plant Prodcom SRL,Pop§or Flaviu,0:29:20
+173,Prodvinalco,Emil Ciumbrudean,0:29:20
+174,HP,Ciupe Sergiu,0:29:21
+175,Endava,Serban Butiri,0:29:24
+176,KPMG,Craciunas Bogdan,0:29:27
+177,KPMG,Mihali Horatiu,0:29:29
+178,Evozon Systems,Simo Aron Zsolt,0:29:29
+179,Robert Bosch SRL,Mile George,0:29:30
+180,Endava,Alexandru Sereseoan,0:29:44
+181,Garmin,Melinescu Bogdan,0:29:52
+182,Endava,Pop Adrian,0:30:04
+183,Prodvinalco,Moldovan Adrian,0:30:05
+184,US FOOD NETWORK SA,OPRIS TUDOR,0:30:08
+185,Spyhce,Peter van Marwyk,0:30:09
+186,National Instruments,Claudiu-Teodor CHIRAP,0:30:10
+187,Evozon,Guran Bogdan,0:30:17
+188,PFA SIMON IOAN,SIMON IOAN,0:30:19
+189,Yardi Romania,Laszlo Oszkar,0:30:36
+190,Spyhce,Bonta Sergiu Vlad,0:30:37
+191,Bissoft,Koteles Attila,0:30:39
+192,Genpact Srl.,Panaite George-Ovidiu,0:30:44
+193,Gameloft,Zsolt Benko,0:30:49
+194,Uniqua Raiffeisen,Pantis Mihai,0:30:51
+195,Nordlogic Software,Darolti Dan,0:31:00
+196,Yardi Romania,Radu Liviu,0:31:01
+197,Fortech,Enache Gabriel Silviu,0:31:15
+198,Yardi Romania,Gheorghiu Radu,0:31:23
+199,Autoworld,Enache Gazdac Sebastian,0:31:26
+200,Evozon,Pogacean Petru-Adrian,0:31:30
+201,ISDC,Andrei Contan,0:31:32
+202,Gameloft,Perseca Alin,0:31:33
+203,AROBS Transilvania Software,Mailat Claudiu,0:31:42
+204,prodvinalco,Ciprian Jacota,0:31:44
+205,PRODVINALCO,DANIEL IFRIM,0:31:44
+206,Endava,Cristian Cazan,0:31:46
+207,Endava,Filip Haragus,0:31:47
+208,PRODVINALCO,SIMION SUCIU,0:31:49
+209,Siemens SRL,Toloman Aurel,0:32:06
+210,Garmin Cluj,Mihaila Sabin,0:32:08
+211,BisSoft,P?curar Paul,0:32:09
+212,Genpact,Lucaciu Gabriel,0:32:10
+213,AROBS Transilvania Software,Apostol Bogdan,0:32:11
+214,Spyhce,Andrei Ceclan,0:32:31
+215,Evozon Systems,Radu Chis,0:32:32
+216,Robert Bosch SRL,Laszlo Albert,0:32:32
+217,Nordlogic Software,Csaba Denes,0:32:35
+218,3Pillar Global SRL,Muresan Mircea,0:32:43
+219,BELLA CLASSIC SRL,BARNA VASILE,0:32:48
+220,Yardi Romania,Vladut Vlad,0:32:53
+221,OSF Global Services,Andrei Marinoiu,0:33:02
+222,PRODVINALCO,GHEORGHE SABAU,0:33:06
+223,PRODVINALCO,MARIUS TELCEAN,0:33:12
+224,PRODVINALCO,OVIDIU POPA,0:33:13
+225,PRODVINALCO,GABRIEL LAZAR,0:33:15
+226,PRODVINALCO,GABI CADAR,0:33:15
+227,pentalog,Ciprian Claudiu Dad,0:33:19
+228,TRANSART,Cioata Mircea,0:33:26
+229,Cloud Troopers Intl,Cosma Radu-Alexandru,0:33:38
+230,Gameloft,Miron Florin,0:33:46
+231,SCA Budusan si Asociatii,Milos Adrian,0:33:59
+232,Yardi Romania,Bica Mihai,0:34:03
+233,Fortech,Militaru Victor Mihail,0:34:11
+234,HP,Fratila Mihai-Cristian,0:34:17
+235,Adrenalin Park,Kiss Alpar Sandor,0:34:20
+236,Robert Bosch SRL,Zsoldics Balint,0:34:25
+237,Spyhce,Hondrari Andrei-George,0:34:29
+238,Prodvinalco,Andi Dascal,0:34:39
+239,Arxia,Militaru Tomita,0:34:43
+240,Vifor Pharma,Duma Mihai,0:34:57
+241,Spyhce,Muj Gabriel Cristian,0:34:58
+242,AROBS Transilvania Software,Suciu Flaviu,0:35:01
+243,Yardi Romania,Bencsat Adrian,0:35:14
+244,AROBS Transilvania Software,Furo Tamas,0:35:15
+245,UMT Software,Parcalab Razvan,0:35:15
+246,Genpact Srl.,Ciuhat Eduard Gabriel,0:35:29
+247,Yardi Romania,Mois Cristian,0:35:52
+248,BELLA CLASSIC SRL,MOLDOVAN CRISTIAN,0:36:04
+249,MHP Consulting Romania,Bogdan Purdea,0:36:29
+250,Alianz Tiriac Asig,Radu Farcas,0:37:10
+251,Genpact Srl.,Benta Vlad,0:37:24
+252,Genpact Srl.,Giurgiu Norber-Andrei,0:37:48
+253,UMT Software,Albu Marius,0:37:51
+254,PRODVINALCO,DORIN HARANGUS,0:38:45
+255,PRODVINALCO,ALIN CHIOREAN,0:38:46
+256,Vifor Pharma Romania SRL,PETROVAI Ion-Gheorghe,0:48:12
+1,Oney Finances SRL,Musca Adriana,0:20:22
+2,Universitatea Babes-Bolyai,Torok Ibolya,0:21:13
+3,Energom,Nagy Roxana,0:23:12
+4,SDL,Alexandra Dumitrica,0:23:27
+5,Yardi Romania,Deghi Dana,0:24:57
+6,SGCPRO Weber Business Unit,Jura Ramona,0:25:14
+7,UMT Software,Pop Corina,0:26:35
+8,Steelcase,Presenti Ala,0:27:02
+9,Universitatea Babes-Bolyai,Adriana Neagu,0:27:12
+10,IQ Energy,Crisan Madalina,0:27:19
+11,Emerson SRL,Petru Camelia,0:27:21
+12,Accesa,Kozma Tunde,0:27:25
+13,BM Solution,Vlad Roxana,0:27:34
+14,Anita Health Center,Lacatus Alexandra,0:27:39
+15,Emerson,Grivase Cristina,0:27:41
+16,BG Soft,Svarisciuc Maria,0:27:46
+17,SOFTVISION,Silvia Cret,0:28:06
+18,STRATEC BIOMEDICAL,Varga Emilia-Sabina,0:28:13
+19,TRC,Carnaru Mirabela,0:28:14
+20,SOFTVISION,Mirela Stroie,0:28:15
+21,Sphyce,Cristina Ilinca,0:28:21
+22,Genpact Srl.,Muntenescu Alexandra,0:28:24
+23,Robert Bosch SRL,Motoc Simina,0:28:32
+24,Steelcase,Moldovan Angela,0:28:34
+25,Endava,Mihaila Malina,0:28:40
+26,Yardi Romania,Remes Andrea,0:28:44
+27,Steelcase,Petre Cristina,0:28:46
+28,Emerson SRL,Filipas Laura,0:28:48
+29,EXL SERVICE ROMANIA,IULIA MACAROV,0:28:51
+30,Robert Bosch SRL,Mocan Roxana,0:29:05
+31,Genpact Srl.,Larisa Sai,0:29:18
+32,US FOOD NETWORK SA,DAMIAN SIMONA,0:29:22
+33,US FOOD NETWORK SA,BUD NICOLETA,0:29:22
+34,Primaria Municipiului Cluj-Napoca,Katona Irina,0:29:31
+35,EVOZON SYSTEMS SRL,Tomsa Anca,0:29:38
+36,Artwin Consulting,Soare Monica,0:29:46
+37,SOFTVISION,Lilla Szasz,0:29:48
+38,Cosmetic Plant Prodcom SRL,Pusk s Melinda,0:29:50
+39,ISDC,Corina Ciocanea,0:29:53
+40,MHP Consulting Romania,Ioana Salanta,0:29:54
+41,Fortech,Moldovan Melania Silvia,0:29:58
+42,UMT Software,Muntean Anca,0:30:01
+43,Siemens SRL,Alexa Cristina,0:30:05
+44,PFA Simon Ioan,Simon Ioana,0:30:19
+45,SCA Budusan si Asociatii,Cristea Mihaela,0:30:29
+46,BCR,Pop Luciana,0:30:30
+47,EXIMTUR,Chivari Rozvita,0:30:36
+48,EXL SERVICE ROMANIA,OANA LIVARCIUC,0:30:51
+49,Endava,Marian Sanda Teodora,0:30:54
+50,Evozon,Alexandra Retegan,0:31:03
+51,Endava,Coman Oana,0:31:05
+52,Artwin Consulting,Violeta Herta,0:31:06
+53,Sykes - Unity Media,Besa Viktoria,0:31:12
+54,Emerson SRL,Giurgiu Alexandra,0:31:29
+55,Emerson SRL,Raluca Culda,0:31:29
+56,Accesa,Sighiartau Carmen,0:31:32
+57,Emerson,Vandor Daniela Maria,0:31:33
+58,Yardi Romania,Eniko Laszlo,0:31:35
+59,Artwin Consulting,Mariana Pirta,0:31:41
+60,BG Soft,Fogas Ioana,0:31:44
+61,Yardi Romania,Dumitru Bianca,0:31:58
+62,EMERSON SRL,MINDRU-FLORIAN OANA,0:32:01
+63,3Pillar Global SRL,Zapca Marinela,0:32:02
+64,Endava,Monica Greab,0:32:12
+65,Cognos Romania,Cristea Florina,0:32:17
+66,EMERSON,TARANU MIRELA,0:32:28
+67,3Pillar Global SRL,Bulgaru Daniela,0:32:31
+68,EXIMTUR,Nemes Loredana,0:32:41
+69,SOFTVISION,Ada Coste,0:32:48
+70,3Pillar Global SRL,Miron Madalina,0:33:06
+71,Endava,Simona Buzea,0:33:17
+72,Genpact Srl.,Chis Georgiana Catalina,0:33:17
+73,Steelcase,Groza Carmen,0:33:27
+74,3Pillar Global SRL,Butica Olivia,0:33:38
+75,Endava,Liliana Bulgaru,0:33:38
+76,Cosmetic Plant Prodcom SRL,Boboi Ildiko,0:33:44
+77,AROBS Transilvania Software,Munteanu Dumitrita,0:34:00
+78,EXL SERVICE ROMANIA,CRISTINA ANDRASI,0:34:14
+79,EXL SERVICE ROMANIA,TIMEA HORVATH,0:34:14
+80,Spyhce,Emanuela Tifrea,0:34:17
+81,Artwin Consulting,Bianca Blaj,0:34:23
+82,Wolters Kluwer Financial Services,Ciucan Alexandra,0:34:25
+83,EXL SERVICE ROMANIA,DIANA OPREAN,0:34:27
+84,Endava,Cynthia Codrea,0:34:36
+85,Garmin Cluj,Onisa Dana,0:34:38
+86,PRODVINALCO,MIRONA MIHALI,0:34:39
+87,Nastimed,Simboan Ana Maria,0:34:42
+88,Anita Health Center,Suteu Maria,0:34:46
+89,PRODVINALCO,CARMEN MANDRU,0:34:47
+90,EXL SERVICE ROMANIA,DIANA IACOB,0:34:48
+91,Vifor Pharma Romania S.r.l,Samoila Mihaela,0:34:56
+92,Vifor Pharma Rom?nia Srl,Nedea Paula Mihaela,0:34:56
+93,UMT Software,Ciociu Camelia,0:35:07
+94,UMT Software,Vlad Alexandra,0:35:07
+95,PFA Simon Ioan,Simon Mara,0:35:16
+96,PFA Simon Ioan,Simon Maria,0:35:16
+97,Transylvania College,Anca Nealcos,0:35:26
+98,INFOWORLD,Carmen Hrin,0:35:34
+99,EXIMTUR,Bodor Csilla,0:35:41
+100,Yardi Romania,Neagoe Eliza,0:35:52
+101,MSG SYSTEMS ROMANIA,Iulia Pernes,0:36:10
+102,AROBS Transilvania Software,Bucur Cristina,0:36:14
+103,EXL SERVICE ROMANIA,LARISA MARINA,0:36:26
+104,US FOOD NETWORK SA,BOBINA ELENA,0:36:30
+105,EXL SERVICE ROMANIA,NADEJDA CHIFOR,0:36:37
+106,Cosmetic Plant Prodcom SRL,Sebestyen Emoke,0:36:43
+107,SCA Budusan si Asociatii,Jenei Christa,0:36:53
+108,MSG SYSTEMS ROMANIA,Csilla Kiss,0:37:02
+109,Nordlogic Software,Bota Laura,0:37:19
+110,Genpact Srl.,Alexandra Dochia,0:37:24
+111,PRIMARIA CLUJ-NAPOCA,ROBU SIMONA,0:37:25
+112,EXIMTUR,Liana Patilea,0:37:36
+113,Genpact Srl.,Bratan Daniela,0:37:48
+114,Steelcase,Fediuc Valentina,0:37:51
+115,Steelcase,Kantor Eva,0:37:52
+116,Yardi Romania,Pinti Adriana Codruta,0:38:02
+117,Vifor Pharma,Muresan Ioana,0:38:08
+118,VIFOR PHARMA ROMANIA,RADOI NICOLETA,0:38:08
+119,UMT Software,Albu Gabriela,0:38:10
+120,PRODVINALCO,MIHAELA OANTA,0:38:22
+121,PRODVINALCO,OANA SELES,0:38:23
+122,US FOOD NETWORK SA,GERGELY IULIA,0:38:31
+123,Steelcase,Vida Valeria-Daniela,0:40:07
+124,3Pillar Global SRL,Csalanosi Csilla,0:41:06
+125,VIFOR PHARMA ROMANIA,CACOVEAN ANGELA,0:41:15
+126,VIFOR PHARMA ROMANIA,NOVACESCU ANCA,0:41:15
+127,Yardi Romania,Teodorescu-Matusz Andreea,0:41:16
+128,EXIMTUR,Mariana Barna,0:41:17
+129,MHP Consulting Romania,Dubles Oana,0:41:17
+130,VIFOR PHARMA ROMANIA,SUMURDUCAN IULIA,0:41:18
+131,Yardi Romania,Sarac Florentina,0:41:20
+132,VIFOR PHARMA ROMANIA,BARBULESCU RALUCA,0:48:14
