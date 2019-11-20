@@ -10,7 +10,7 @@ include Spark
     if params[:segment_id]=="0"
       #Agregate Mode
           #@stats = Stat.all.sort {|a,b| a.kmh.to_f <=> b.kmh.to_f}.reverse
-          @stats = Stat.group("LOWER(name)").having("count(*) > 0").select("min(id),  max(name) as name,
+          @stats = Stat.group("LOWER(name)").having("count(*) > 0").select("min(segment_id),  max(name) as name,
             max(company) as company, min(time) as time, max(kmh) as kmh,
             min(minkm) as minkm, max(stars) as stars").sort {|a,b| a.kmh.to_f <=> b.kmh.to_f}.reverse
           i=0
