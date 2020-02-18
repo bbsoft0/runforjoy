@@ -12,6 +12,7 @@ General statistics for all runners -  stars - personal bests.
 
 An online <a href="http://runforjoy.snipermed.ro/">version </a> is available.
 
+[![Run on Repl.it](https://repl.it/badge/github/bbsoft0/runforjoy)](https://repl.it/github/bbsoft0/runforjoy)
 
 ## Implementation Features
 
