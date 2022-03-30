@@ -36,7 +36,7 @@ gem 'will_paginate'
 gem 'pg', require: false
 gem 'uglifier',require: false
 gem 'will_paginate-bootstrap', require: false
-gem 'puma', '~> 4.1', require: false
+gem 'puma', '~> 4.3', require: false
 gem 'omniauth-facebook'
 gem "omniauth-rails_csrf_protection"
 gem 'minitest'
