@@ -1,6 +1,6 @@
 ## Run For Joy
 
-A cute application offering stats and advice for joyfull and healthy running.
+An application offering stats and advice for joyfull and healthy running.
 
 Values elegance, simplicity, and readability.
 
