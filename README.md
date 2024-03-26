@@ -14,7 +14,7 @@ An online <a href="http://runforjoy.snipermed.ro/">version </a> is available.
 
 [![Run on Repl.it](https://repl.it/badge/github/bbsoft0/runforjoy)](https://repl.it/github/bbsoft0/runforjoy)
 
-## Implementation Features
+## Implemented Features
 
  * Authentication with devise
  * Facebook authentication
@@ -47,7 +47,7 @@ v 0.1.0
   The form graph will have  a graphical display of runner evolution with tree points empasized - min, max ,last. This is essential for discovering strengths and weaknesses of athlete along a larger period of time.
 
 ## Issues, questions and feature requests
-Open a new request, I'd love to help.
+Open a new request, All addons are welcome !
 
 ## Caprover Environment Variables
 
